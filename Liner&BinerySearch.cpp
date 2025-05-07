@@ -1,18 +1,16 @@
 
-void bubbleSortArray()
+void display()
 {
-    int pass = 1;
-    do
+    cout << "==============================\n";
+    cout << "Elemen Array Setelah Diurutkan (Asc)\n";
+    cout << "==============================\n";
+    for (int i = 0; i < nPanjang; i++)
     {
-        for (int i = 0; i <= nPanjang - pass - 1; i++)
+        cout << elemen[i];
+        if (i < nPanjang - 1)
         {
-            if (elemen[i] > elemen[i + 1])
-            {
-                int temp = elemen[i];
-                elemen[i] = elemen[i + 1];
-                elemen[i + 1] = temp;
-            }
+            cout << ", ";
         }
-        pass++;
-    } while (pass < nPanjang);
+    }
+    cout << endl;
 }
