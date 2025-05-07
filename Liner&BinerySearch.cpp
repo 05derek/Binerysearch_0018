@@ -1,16 +1,16 @@
 
-void display()
+void binarySearch()
 {
-    cout << "==============================\n";
-    cout << "Elemen Array Setelah Diurutkan (Asc)\n";
-    cout << "==============================\n";
-    for (int i = 0; i < nPanjang; i++)
+    char ulang;
+    do
     {
-        cout << elemen[i];
-        if (i < nPanjang - 1)
-        {
-            cout << ", ";
-        }
-    }
-    cout << endl;
-}
+        cout << "\n==============================\n";
+        cout << "Pencarian Binary Search\n";
+        cout << "==============================\n";
+
+        int item;
+        cout << "Masukkan elemen yang ingin dicari: ";
+        cin >> item;
+
+        int low = 0;
+        int high = nPanjang - 1;
